@@ -1,6 +1,6 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.0.4'
+	id 'org.springframework.boot' version '3.0.5'
 	id 'io.spring.dependency-management' version '1.1.0'
 }
 
@@ -37,6 +37,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.yaml:snakeyaml:2.0'
 
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
@@ -45,8 +46,6 @@ dependencies {
 	testImplementation 'org.testcontainers:postgresql'
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-
-	implementation 'org.yaml:snakeyaml:2.0'
 
 	runtimeOnly 'org.postgresql:postgresql'
 }
